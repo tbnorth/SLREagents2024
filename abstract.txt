@@ -1,0 +1,26 @@
+#61. Remote Sensing, Visualization, and Spatial Data Applications for the Great Lakes
+
+#31. Evaluation of the Current State of Ecological Modeling and Future Perspectives
+
+#50. Fate and Transport of Suspended Particles
+
+#41. Great Lakes Harmful Algal Blooms Research from Watershed Influence to Ecosystem Effects
+
+#54. Food Web Ecology and Dynamics of Lake Ontario: Nearshore – Pelagic Linkages
+
+#38. Nutrient Sources, Transport & Retention in Great Lakes Watersheds: Field Measurements, Modeling and Management implications
+
+#39. Managing Agriculture Water and Nutrients ‐ Science Solutions for Tomorrows BMP's
+
+Who messed up my lake?
+
+Initial results from a lake-wide agent based simulation releasing virtual
+drifters from multiple tributaries over time. We examine the use of
+agent based modeling to break down the sources contributing to the
+composition of nearshore waters. Knowing that flow is highly biased in
+favor of long shore flow over offshore flow, we investigate possible
+origins of the water (and implicitly nutrients) in the nearshore around
+the lake. Considerations include 2D vs. 3D transport, the role of
+diffusion, and computational challenges (days × tributaries generate
+large numbers of agents), and visualization and interpretation of
+results.
