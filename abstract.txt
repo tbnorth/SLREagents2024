@@ -24,3 +24,5 @@ the lake. Considerations include 2D vs. 3D transport, the role of
 diffusion, and computational challenges (days × tributaries generate
 large numbers of agents), and visualization and interpretation of
 results.
+
+Submitted Wed Jan 17 15:34:17 2018
