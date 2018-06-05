@@ -94,6 +94,7 @@ http://tbnorth.github.io/iaglr2018 -->
    days makes no sense, 1-15 days might
  - eggs, larvae etc. don't dilute, can be followed for longer
 
+
 ## NW 365 <!-- .slide: data-state="hide-head" -->
 
 <!-- .slide: data-background="img/nw_main.png" data-background-size="contain" -->
