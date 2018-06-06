@@ -118,6 +118,45 @@ http://tbnorth.github.io/iaglr2018 -->
 
 # Where did it come from?
 
+```
+python nsagent_contrib.py --start 20150901 --end 20150907 \
+  testconf.json /d/large/nsagents/lastrun_0601.nc \
+  --max-age 56 --SWNE 41.6959 -87.9012 42.1807 -87.4333
+
+Reporting iterations 1944-1992
+Reporting from row,col 9,11
+Reporting to row,col 63,48
+425952 records in interval
+Selected 5994 records by bounds
+Selected 3696 records by age
+Selected 163 agents
+```
+
+.
+
+
+# Chicago <!-- .slide: data-state="hide-head" -->
+<!-- .slide: data-background="img/chicago56.png" data-background-size="contain" -->
+
+
+
+# Chicago <!-- .slide: data-state="hide-head" -->
+<!-- .slide: data-background="img/chicago14.png" data-background-size="contain" -->
+
+<!--
+python nsagent_contrib.py --start 20150901 --end 20150907 testconf.json /d/large/nsagents/lastrun_0601.nc --max-age 14 --SWNE 41.6959 -87.9012 42.1807 -87.4333
+Reporting iterations 1944-1992
+Reporting from 9,11
+Reporting to 63,48
+425952 records in interval
+Selected 5994 records by bounds
+Selected 2945 records by age
+Selected 106 agents
+-->
+# Depth
+
+
+
 # Drifters
 
 - real life agents, for model validation and real world measurements
@@ -147,4 +186,5 @@ http://tbnorth.github.io/iaglr2018 -->
  -  Tow data
 
 Brown.TerryN@epa.gov
+
 
