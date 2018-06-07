@@ -4,7 +4,13 @@
 
 <!-- ## Terry Brown, USEPA
 
-http://tbnorth.github.io/iaglr2018 -->
+http://tbnorth.github.io/iaglr2018
+
+Use *Firefox*
+
+i=0; while read; do python webshot.py iaglr2018 $(printf test%02d.bmp $i) 68 5 5 5; i=$[i+1]; echo $i; done
+
+-->
 
 
 
@@ -128,7 +134,6 @@ Selected 5994 records by bounds
 Selected 3696 records by age
 Selected 163 agents
 ```
-.
 
 
 ## Chicago <!-- .slide: data-state="hide-head" -->
@@ -136,6 +141,7 @@ Selected 163 agents
 
 
 ## Chicago <!-- .slide: data-state="hide-head" -->
+
 <!-- .slide: data-background="img/chicago14.png" data-background-size="contain" -->
 
 <!--
@@ -151,7 +157,6 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 # Depth
 
 ![](img/depth.png)
-
 
 
 
@@ -179,9 +184,28 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
 
 
+# “Future” work
+
+ - Retrospective tow data analysis
+ - Refine correlation from ~1/4 lake scale to more
+   immediate tribuatories
+
+![](img/towdata.png)
+
+
+
 # Future work
 
- -  Tow data
+ - Characterize nearshore composition for areas of interest
+ - See if "problem" areas correlate to land use by water
+   origin, as defined by agents
+   - time scale for highest correlation?
+
+
+
+# Questions?
+
+![](img/wave.png)
 
 Brown.TerryN@epa.gov
 
