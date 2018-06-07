@@ -54,17 +54,14 @@ http://tbnorth.github.io/iaglr2018 -->
 
 # Contrib 1 <!-- .slide: data-state="hide-head" -->
 <!-- .slide: data-background="img/nearshore_contrib0.png" data-background-size="contain" -->
-<!-- .slide: data-background-color="white" -->
 
 
 ## Contrib 2 <!-- .slide: data-state="hide-head" -->
 <!-- .slide: data-background="img/nearshore_contrib1.png" data-background-size="contain" -->
-<!-- .slide: data-background-color="white" -->
 
 
 ## Contrib 3 <!-- .slide: data-state="hide-head" -->
 <!-- .slide: data-background="img/nearshore_contrib2.png" data-background-size="contain" -->
-<!-- .slide: data-background-color="white" -->
 
 
 
@@ -91,7 +88,7 @@ http://tbnorth.github.io/iaglr2018 -->
 # Where do they go?
 
  - nutrients mix / dilute / disperse, following them for 365
-   days makes no sense, 1-15 days might
+   days makes no sense, 7-21 days might
  - eggs, larvae etc. don't dilute, can be followed for longer
 
 
@@ -152,6 +149,9 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
 
 # Depth
+
+![](img/depth.png)
+
 
 
 
