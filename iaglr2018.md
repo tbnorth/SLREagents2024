@@ -188,7 +188,7 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
  - Retrospective tow data analysis
  - Refine correlation from ~1/4 lake scale to more
-   immediate tribuatories
+   immediate tributaries
 
 ![](img/towdata.png)
 
