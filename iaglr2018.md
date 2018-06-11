@@ -8,7 +8,7 @@ http://tbnorth.github.io/iaglr2018
 
 Use *Firefox*
 
-i=0; while read; do python webshot.py iaglr2018 $(printf test%02d.bmp $i) 68 5 5 5; i=$[i+1]; echo $i; done
+i=0; while read; do python webshot.py '^iaglr2018$' $(printf test%02d.bmp $i) 68 5 5 5; i=$[i+1]; echo $i; done
 
 -->
 
