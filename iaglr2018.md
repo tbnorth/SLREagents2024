@@ -90,12 +90,24 @@ i=0; while read; do python webshot.py iaglr2018 $(printf test%02d.bmp $i) 68 5 5
  - Vectorized Python (numpy), 90 minute run time
 
 
+## In a database
+
+ - 19M records of `time, origin, birth, x, y, z`
+ - use a netCDF file, treated as a 19M line array
+ - hard to work out which lines contain which records
+   - add agents every day (every 8 iterations)
+   - might start removing agents in future
+ - loaded into SQLite DB, same size file, fast indexes
+
+
 
 # Where do they go?
 
  - nutrients mix / dilute / disperse, following them for 365
    days makes no sense, 7-21 days might
  - eggs, larvae etc. don't dilute, can be followed for longer
+ - why not heat maps - agents spread quite thin,
+   makes little difference
 
 
 ## NW 365 <!-- .slide: data-state="hide-head" -->
