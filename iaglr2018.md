@@ -48,6 +48,19 @@ i=0; while read; do python webshot.py '^iaglr2018$' $(printf test%02d.bmp $i) 68
 ![fish](img/fish.png)
 
 
+## Agent Based Models (ABMs) and complexity
+
+- run ABM with thousands of agents...
+- competition for food / shade
+- big fish / little fish
+  - how does time spent hiding impact time
+    spent feeding?
+- test different behaviors / foraging
+  strategies
+
+Complexity more easily represented in ABMs
+
+
 ## Agents for continuous phenomena
 
 - historically agent based modeling focused on distinct
