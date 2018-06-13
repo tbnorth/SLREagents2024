@@ -185,6 +185,13 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
 
 
+# A model built on a model...
+
+ - real world validation (next slide)
+ - test explanatory power (future work)
+
+
+
 # Drifters
 
 - real life agents, for model validation and real world measurements
@@ -202,6 +209,10 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
 ## Drifter <!-- .slide: data-state="hide-head" -->
 ![](img/IMG_20161117_143538.jpg) <!-- .element height="700" -->
+
+
+## Drifter <!-- .slide: data-state="hide-head" -->
+![](img/tracker.png) <!-- .element height="700" -->
 
 
 ## Drifter <!-- .slide: data-state="hide-head" -->
