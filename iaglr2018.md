@@ -178,6 +178,10 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 -->
 
 
+## Anim <!-- .slide: data-state="hide-head" -->
+<div style="position:relative;height:0;padding-bottom:75.0%"><iframe src="https://www.youtube.com/embed/8LHHP5tMndU?rel=0&amp;controls=1&amp;showinfo=0&ecver=2" width="480" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+
+
 
 # Depth
 
@@ -200,7 +204,8 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
 
 ## Drifter <!-- .slide: data-state="hide-head" -->
-![](img/20180524_114738-1.jpg) <!-- .element height="700" -->
+
+<!-- .slide: data-background="img/20180524_114738-1.jpg" data-background-size="contain" -->
 
 
 ## Drifter <!-- .slide: data-state="hide-head" -->
@@ -208,11 +213,13 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
 
 ## Drifter <!-- .slide: data-state="hide-head" -->
-![](img/IMG_20161117_143538.jpg) <!-- .element height="700" -->
+
+<!-- .slide: data-background="img/IMG_20180524_124736638.jpg" data-background-size="contain" -->
 
 
 ## Drifter <!-- .slide: data-state="hide-head" -->
-![](img/tracker.png) <!-- .element height="700" -->
+
+<!-- .slide: data-background="img/tracker.png" data-background-size="contain" -->
 
 
 ## Drifter <!-- .slide: data-state="hide-head" -->
@@ -244,4 +251,12 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 ![](img/wave.png)
 
 Brown.TerryN@epa.gov
+
+https://tbnorth.github.io/iaglr2018/
+
+
+
+## Animation (a bit slower) <!-- .slide: data-state="hide-head" -->
+
+<div style="position:relative;height:0;padding-bottom:75.0%"><iframe src="https://www.youtube.com/embed/04jy3JbZgic?rel=0&amp;controls=1&amp;showinfo=0&ecver=2" width="480" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
