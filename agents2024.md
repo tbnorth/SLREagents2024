@@ -1,3 +1,7 @@
+# Agent based modeling for SLRE
+
+Terry Brown, Tom Hollenorst, Brandon Jarvis, James Pauer, USEPA
+
 # Who messed up my lake? <!-- .slide: data-state="hide-head" -->
 
 <!-- .slide: data-background="img/front.png" data-background-size="contain" -->
