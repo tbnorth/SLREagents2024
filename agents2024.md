@@ -1,6 +1,6 @@
 # Agent based modeling for SLRE
 
-Terry Brown, Tom Hollenorst,<br/>Brandon Jarvis, James Pauer
+Terry Brown, Tom Hollenhorst,<br/>Brandon Jarvis, James Pauer
 
 USEPA
 
