@@ -1,8 +1,25 @@
 # Agent based modeling for SLRE
 
-Terry Brown, Tom Hollenorst, Brandon Jarvis, James Pauer, USEPA
+Terry Brown, Tom Hollenorst,<br/>Brandon Jarvis, James Pauer
 
-# Who messed up my lake? <!-- .slide: data-state="hide-head" -->
+USEPA
+
+brown.terryn@epa.gov
+
+SLRE modelling meeting Mar. 5 2024
+
+
+## Early idea gathering stage
+
+- An approach that can leverage any hydrodynamic modeling work
+- Looking for specific SLRE applications
+- This presentation is
+  - introducing the approach
+  - requesting input
+  - based on a previous presentation:
+
+
+## Who messed up my lake? <!-- .slide: data-state="hide-head" -->
 
 <!-- .slide: data-background="img/front.png" data-background-size="contain" -->
 
@@ -20,28 +37,18 @@ i=0; while read; do python webshot.py '^iaglr2018$' $(printf test%02d.bmp $i) 68
 
 # Goals
 
- - Look at movement of nutrients in near shore
- - Tie land use to observed nearshore conditions
- - Examine influence on algal blooms (large scale /
-   long term)
- - Look at impacts of land use decisions
+ - Look at movement of X in the SLRE / western Lake Superior
+ - Xs from stakeholders - what moves in the Estuary that you care about?
 
 
 
-# Harmful Algal Blooms
+# Agent based models
 
- - Public health
- - Environmental impact
- - Economic impact
- - Recreational impact
-
-
-
-# Agents
+Agents:
 
 - exist at a specific point in space
 - can have multiple static and varying attributes
-- can interact with surrounding agents (and cells)
+- can interact with surrounding agents (and grid cells)
   based on distance etc.
 - added and removed from the model over the model's
   run-time
@@ -75,20 +82,7 @@ Complexity more easily represented in ABMs
 
 
 
-# Contrib 1 <!-- .slide: data-state="hide-head" -->
-<!-- .slide: data-background="img/nearshore_contrib0.png" data-background-size="contain" -->
-
-
-## Contrib 2 <!-- .slide: data-state="hide-head" -->
-<!-- .slide: data-background="img/nearshore_contrib1.png" data-background-size="contain" -->
-
-
-## Contrib 3 <!-- .slide: data-state="hide-head" -->
-<!-- .slide: data-background="img/nearshore_contrib2.png" data-background-size="contain" -->
-
-
-
-# Hydrodynamic data
+# Hydrodynamic data - Lake Michigan
 
  - Dong Ko, U.S. Naval Research Laboratory (NRL)
  - POM (Princeton Ocean Model), 1 x 1 km x 25 layers
@@ -97,24 +91,19 @@ Complexity more easily represented in ABMs
  - Approx. 1 Tb of data for all 13 years
 
 
+## Hydrodynamic data - SLRE
 
-# Model overview
+EFDC model, run with particle tracing integrated
+
+<img src="img/efdcslre.png" />
+
+
+## Model overview - Lake Michigan
 
  - release 1 agent from each of 36 rivers each day
    - (once every 8 iterations)
  - agents released Jan. 1 are 365 days old at end of run
  - 19,236,960 records for 13,140 agents, 1.3 Gb NetCDF
- - Vectorized Python (numpy), 90 minute run time
-
-
-## In a database
-
- - 19M records of `time, origin, birth, x, y, z`
- - use a netCDF file, treated as a 19M line array
- - hard to work out which lines contain which records
-   - add agents every day (every 8 iterations)
-   - might start removing agents in future
- - loaded into SQLite DB, same size file, fast indexes
 
 
 
@@ -150,19 +139,11 @@ Complexity more easily represented in ABMs
 
 # Where did it come from?
 
-```
-python nsagent_contrib.py --start 20150901 --end 20150907 \
-  testconf.json /mnt/edata/edata/large/nsagents/lastrun.nc \
-  --max-age 56 --WSEN -87.9012 41.6959 -87.4333 42.1807 \
-  --lbrt 0 0 155 150
-Reporting iterations 1944-1992
-Reporting from 9,11
-Reporting to 63,48
-425952 records in interval
-Selected 5994 records by bounds
-Selected 3696 records by age
-Selected 163 agents
-```
+Query the particle paths:
+
+- within this box
+- between these dates
+- for particles in this age range
 
 
 ## Chicago <!-- .slide: data-state="hide-head" -->
@@ -183,7 +164,17 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
 
 ## Anim <!-- .slide: data-state="hide-head" -->
+
+<!--
 <div style="position:relative;height:0;padding-bottom:75.0%"><iframe src="https://www.youtube.com/embed/8LHHP5tMndU?rel=0&amp;controls=1&amp;showinfo=0&ecver=2" width="480" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+-->
+
+<div style="position:relative;height:0;padding-bottom:75.0%"><iframe src="https://www.youtube.com/embed/u0lZkDkwfPA?rel=0&amp;controls=1&amp;showinfo=0&ecver=2" width="480" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+
+
+## Anim <!-- .slide: data-state="hide-head" -->
+
+<div style="position:relative;height:0;padding-bottom:75.0%"><iframe src="https://www.youtube.com/embed/Tzgs4DvHcJI?rel=0&amp;controls=1&amp;showinfo=0&ecver=2" width="480" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
 
 
@@ -195,8 +186,7 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
 # A model built on a model...
 
- - real world validation (next slide)
- - test explanatory power (future work)
+ - real world validation
 
 
 
@@ -231,33 +221,11 @@ mogrify -trim -border 10x10 -bordercolor white Figure_1*
 
 
 
-# “Future” work
-
- - Retrospective tow data analysis
- - Refine correlation from ~1/4 lake scale to more
-   immediate tributaries
-
-![](img/towdata.png)
-
-
-
-# Future work
-
- - Characterize nearshore composition for areas of interest
- - See if "problem" areas correlate to land use by water
-   origin, as defined by agents
-   - time scale for highest correlation?
-
-
-
 # Questions?
 
 ![](img/wave.png)
 
-Brown.TerryN@epa.gov
-
-https://tbnorth.github.io/iaglr2018/
-
+Brown.TerryN@epa.gov https://tbnorth.github.io/SLREagents2024
 
 
 ## Animation (a bit slower) <!-- .slide: data-state="hide-head" -->
