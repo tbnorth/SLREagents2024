@@ -37,7 +37,7 @@ i=0; while read; do python webshot.py '^iaglr2018$' $(printf test%02d.bmp $i) 68
 
 # Goals
 
- - Look at movement of X in the SLRE / western Lake Superior
+ - Look at movement of X in the SLRE and<br/> western Lake Superior
  - Xs from stakeholders - what moves in the Estuary that you care about?
 
 
@@ -50,7 +50,7 @@ Agents:
 - can have multiple static and varying attributes
 - can interact with surrounding agents (and grid cells)
   based on distance etc.
-- added and removed from the model over the model's
+- added to and removed from the model over the model's
   run-time
 
 
